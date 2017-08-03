@@ -1,0 +1,11 @@
+[submodule "contrib"]
+
+	path = contrib
+
+	url = https://github.com/Kira-sempai/lwip-contrib.git
+
+[submodule "lwip"]
+
+	path = lwip
+
+	url = https://github.com/Kira-sempai/lwip.git
