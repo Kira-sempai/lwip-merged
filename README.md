@@ -1,4 +1,4 @@
-# lwIP meta repo [![Build Status](https://travis-ci.org/yarrick/lwip-merged.svg?branch=master)](https://travis-ci.org/yarrick/lwip-merged)
+# lwIP meta repo [![Build Status](https://travis-ci.org/Kira-sempai/lwip-merged.svg?branch=master)](https://travis-ci.org/Kira-sempai/lwip-merged)
 
 This repo contains the two unoficial lwIP git trees as submodules.
 It is updated by a script every hour following the DLmaster branch.

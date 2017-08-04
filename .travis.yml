@@ -31,6 +31,9 @@ addons:
     packages:
       - check
       - libsubunit-dev
+      
+before_script:
+    - chmod +x ./test.sh
 
 script: ./test.sh
 

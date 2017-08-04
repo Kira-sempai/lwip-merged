@@ -5,8 +5,10 @@ if [ -z "$1" ]; then
 	exit 3
 fi
 
+TMP_FOLDER=$1"/TMP"
+
 #redirect output
-exec > /tmp/merger.log
+exec > $TMP_FOLDER/merger.log
 exec 2>&1
 
 #move to root dir
@@ -30,15 +32,15 @@ git pull --recurse-submodules
 #Read out new HEAD
 cd lwip
 git rebase origin/master
-git push github master
+#git push github master
 LWIP_POSTREV=`git rev-parse HEAD`
 cd ../contrib
 git rebase origin/master
-git push github master
+#git push github master
 CONTRIB_POSTREV=`git rev-parse HEAD`
 cd ..
 
-MESSAGEFILE="/tmp/merger.$$"
+MESSAGEFILE=$TMP_FOLDER"/merger.$$"
 CHANGE=
 
 echo "New code from lwip project" > $MESSAGEFILE
