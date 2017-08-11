@@ -27,7 +27,7 @@ CONTRIB_PREREV=`git rev-parse HEAD`
 cd ..
 
 #do the update
-git pull --recurse-submodules
+git submodule update --recursive --remote
 
 #Read out new HEAD
 cd lwip
